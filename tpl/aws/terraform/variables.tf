@@ -1,8 +1,8 @@
-variable "aws_access_key" {
+variable "access_key" {
   type = "string"
 }
 
-variable "aws_secret_key" {
+variable "secret_key" {
   type = "string"
 }
 
@@ -18,37 +18,33 @@ variable "keypair_name" {
   type = "string"
 }
 
-variable "aws_region" {
+variable "region" {
   type = "string"
   default =  "eu-central-1"
 }
 
-variable "aws_availability_zone" {
+variable "availability_zone" {
   type = "string"
   default =  "eu-central-1a"
 }
 
-variable "aws_vpc_cidr_block" {
+variable "vpc_cidr_block" {
   type = "string"
 }
 
-variable "aws_vpc_name" {
+variable "vpc_name" {
   type = "string"
 }
 
-variable "aws_platform_subnet_cidr_block" {
+variable "subnet_cidr" {
   type = "string"
 }
 
-variable "aws_platform_subnet_name" {
+variable "subnet_name" {
   type = "string"
 }
 
-variable "aws_ops_subnet_cidr_block" {
-  type = "string"
-}
-
-variable "aws_ops_subnet_name" {
+variable "internal_gw" {
   type = "string"
 }
 
